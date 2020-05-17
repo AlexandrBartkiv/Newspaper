@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.wraper{
+    display: grid;
+    grid-template-areas: 
+    "h h"
+    "c1 c2";
+    grid-template-columns: repeat(auto-fit, 180px 1fr);
+    grid-gap: 1rem;
+    &>header{
+        grid-area: "h";
+        grid-column: span 2;
+        width: 100%;
+        height: max-content;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        &>.h1{
+            display: flex;
+            margin-bottom: 1rem;
+            flex-wrap: nowrap;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+           
+            &>h1{
+                font-size: 10rem;
+            }
+            &>#left{
+                display: inline-block;
+                width: 10rem;
+                font-size: 0.7rem;
+                text-align: center;
+            }
+            &>#right{
+                display: inline-block;
+                width: 12rem;
+                font-size: 1.4rem;
+                text-align: center;
+            }
+        }
+        &>.date{
+            display:flex;
+            justify-content: space-around;
+            font-size: 2rem;
+        }
+        
+    }
+    &>.col1{
+        grid-area: c1;
+        &>#left_1{
+            margin: 2rem;
+            width: 50rem;
+            text-align: justify;
+            display: flex;
+            flex-wrap: wrap;
+            &>#p{
+                height: min-content;
+                font-size: 1.2rem;
+                text-align: justify;
+                width: 50rem;
+                &>img{
+                    float: left;
+                    margin-right: 1rem;
+                }
+                &>span{
+                    font-size: 3rem;
+                }
+            }
+            &>h1{
+                font-size: 5.6rem;
+                text-align: justify;
+            }    
+        }
+        &>hr{
+            margin-left: 2rem;
+            width: 50rem;
+            margin-bottom: 1rem;
+        }
+        &>#left_2{
+            margin: 2rem;
+            width: 50rem;
+            text-align: justify;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+            &>h1{
+                font-size: 3.7rem;
+                text-align: justify;
+            }
+            &>h2{
+                font-size: 2.5rem;
+                margin: auto;
+                margin-bottom: 1rem;
+            }
+            &>#p2{
+                font-size: 1.2rem;
+                &>img{
+                    float: right;
+                    margin-left: 1rem;
+                }
+            }
+        }
+        &>#left_3{
+            margin: 2rem;
+            width: 50rem;
+            text-align: justify;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+            &>#p3{
+                font-size: 1.2rem;
+                &>img{
+                    float: left;
+                    padding: 1rem 1rem 1rem 0;
+                }
+                &>span{
+                    font-size: 3.75rem;
+                }
+                &>hr{
+                    width: 10rem;
+                }
+            }
+        }
+    }
+}
